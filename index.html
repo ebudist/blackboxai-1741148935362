@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sulistyanto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .qr-hidden {
+            filter: blur(10px);
+            transition: filter 0.5s ease;
+        }
+        .qr-visible {
+            filter: blur(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-gray-800">Sulistyanto</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition">About</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 transition">Services</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-12 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
+                        Hi, I'm Sulistyanto
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        A passionate developer creating amazing digital experiences
+                    </p>
+                    <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">
+                        Get in Touch
+                    </a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://via.placeholder.com/500" alt="Hero Image" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">About Me</h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-gray-600 mb-6">
+                    I'm a dedicated professional with expertise in web development and digital solutions. 
+                    My passion lies in creating efficient and elegant solutions for complex problems.
+                </p>
+                <div class="grid grid-cols-3 gap-6 mt-12">
+                    <div class="p-6 bg-gray-50 rounded-lg">
+                        <i class="fas fa-code text-3xl text-blue-600 mb-4"></i>
+                        <h3 class="font-semibold mb-2">Web Development</h3>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg">
+                        <i class="fas fa-mobile-alt text-3xl text-blue-600 mb-4"></i>
+                        <h3 class="font-semibold mb-2">Responsive Design</h3>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-lg">
+                        <i class="fas fa-rocket text-3xl text-blue-600 mb-4"></i>
+                        <h3 class="font-semibold mb-2">Performance</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">My Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-laptop-code text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Web Development</h3>
+                    <p class="text-gray-600">Custom websites and web applications built with modern technologies.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-mobile-alt text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Mobile Development</h3>
+                    <p class="text-gray-600">Native and cross-platform mobile applications.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-server text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Backend Development</h3>
+                    <p class="text-gray-600">Scalable and secure backend solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Code Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Support My Work</h2>
+            <div class="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQrJyEkKSQ4Mjc1NjM4MTY5PT8+QUFBNjpPUVFWWFhYMkRHSkdGWlFYW1f/2wBDAR" 
+                    alt="QR Code" 
+                    class="qr-hidden mx-auto mb-6" 
+                    id="qrCode">
+                <button onclick="revealQR()" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">
+                    Reveal QR Code
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Get in Touch</h2>
+            <div class="max-w-lg mx-auto">
+                <div class="flex flex-col space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-envelope text-blue-600"></i>
+                        <span class="text-gray-600">contact@sulistyanto.com</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-phone text-blue-600"></i>
+                        <span class="text-gray-600">+1234567890</span>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <i class="fas fa-map-marker-alt text-blue-600"></i>
+                        <span class="text-gray-600">Jakarta, Indonesia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Sulistyanto. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function revealQR() {
+            const qrCode = document.getElementById('qrCode');
+            qrCode.classList.remove('qr-hidden');
+            qrCode.classList.add('qr-visible');
+        }
+    </script>
+</body>
+</html>
